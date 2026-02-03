@@ -8,9 +8,8 @@ module.exports = {
         venv: "env",
         path: "app",
         message: [
-          "huggingface-cli download Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice-8bit --local-dir models/Qwen3-TTS-12Hz-1.7B-CustomVoice-8bit",
-          "huggingface-cli download Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign-8bit --local-dir models/Qwen3-TTS-12Hz-1.7B-VoiceDesign-8bit",
-          "huggingface-cli download Qwen/Qwen3-TTS-12Hz-1.7B-Base-8bit --local-dir models/Qwen3-TTS-12Hz-1.7B-Base-8bit"
+          "python -c \"from huggingface_hub import snapshot_download; snapshot_download('mlx-community/Qwen3-TTS-12Hz-1.7B-CustomVoice-8bit', local_dir='models/Qwen3-TTS-12Hz-1.7B-CustomVoice-8bit')\"",
+          "python -c \"from huggingface_hub import snapshot_download; snapshot_download('mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit', local_dir='models/Qwen3-TTS-12Hz-1.7B-Base-8bit')\""
         ]
       }
     }

@@ -7,7 +7,7 @@ module.exports = {
         venv: "env",
         path: "app",
         message: [
-          "python webui.py --host 127.0.0.1 --port {{port}}"
+          "python -m uvicorn server:app --host 127.0.0.1 --port {{port}}"
         ],
         on: [{
           event: "/(http:\\/\\/[0-9.:]+)/",
@@ -18,7 +18,7 @@ module.exports = {
     {
       method: "local.set",
       params: {
-        url: "{{input.event[1]}}"
+        url: "{{input.event[1]}}/demo"
       }
     }
   ]
