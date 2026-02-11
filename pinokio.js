@@ -1,7 +1,7 @@
 module.exports = {
   version: "5.0",
   title: "Qwen3-TTS MLX",
-  description: "High-quality text-to-speech optimized for Apple Silicon",
+  description: "High-quality text-to-speech with Web UI, optimized for Apple Silicon using MLX. Features Custom Voice (preset speakers), Voice Design (natural language), Voice Cloning with saved voice library, auto-transcription, and streaming output. LAN accessible.",
   icon: "icon.png",
   menu: async (kernel, info) => {
     let installed = info.exists("app/env")
