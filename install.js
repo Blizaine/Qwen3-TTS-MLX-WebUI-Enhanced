@@ -19,7 +19,7 @@ module.exports = {
         message: [
           "uv pip install mlx mlx-lm",
           "uv pip install git+https://github.com/Blaizzy/mlx-audio.git",
-          "uv pip install librosa soundfile transformers sentencepiece tiktoken",
+          "uv pip install librosa soundfile transformers sentencepiece tiktoken mlx-whisper",
           "uv pip install huggingface_hub tqdm pyyaml numpy",
           "uv pip install fastapi uvicorn python-multipart"
         ]
