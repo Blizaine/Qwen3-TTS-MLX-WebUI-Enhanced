@@ -1,6 +1,6 @@
 {
   "title": "Qwen3-TTS MLX WebUI Enhanced",
-  "description": "High-quality text-to-speech with Web UI, optimized for Apple Silicon using MLX. Features Custom Voice (preset speakers), Voice Design (natural language), and Voice Cloning.",
+  "description": "High-quality text-to-speech with Beautiful Web UI & API, optimized for Apple Silicon using MLX. Features include Custom Voice (preset speakers), Voice Design (natural language), and Voice Cloning. With enhanced features for saving custom voices and long-form / endless TTS streaming.",
   "icon": "icon.png",
   "platform": ["darwin"],
   "arch": ["arm64"]
