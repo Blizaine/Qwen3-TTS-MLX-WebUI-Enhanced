@@ -10,7 +10,7 @@ module.exports = {
           "python -m uvicorn server:app --host 0.0.0.0 --port {{port}}"
         ],
         on: [{
-          event: "/(http:\\/\\/[0-9.:]+)/",
+          event: "/http:\\/\\/[0-9.:]+:([0-9]+)/",
           done: true
         }]
       }
@@ -18,7 +18,7 @@ module.exports = {
     {
       method: "local.set",
       params: {
-        url: "{{input.event[1]}}/demo"
+        url: "http://127.0.0.1:{{input.event[1]}}/demo"
       }
     }
   ]
